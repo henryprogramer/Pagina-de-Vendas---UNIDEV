@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prova Social - WebBuilder Pro</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#1c2636", 
+                        "card-light": "#ffffff"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-gray-900 dark:text-white pb-24">
+<!-- Top AppBar -->
+<div class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center p-4 justify-between">
+<button class="text-gray-900 dark:text-white flex size-12 shrink-0 items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-800 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">
+                WebBuilder Pro
+            </h2>
+</div>
+</div>
+<!-- Main Content Container -->
+<div class="flex flex-col w-full max-w-md mx-auto">
+<!-- Headline Section -->
+<div class="px-4 pt-6 pb-2 text-center">
+<h1 class="text-gray-900 dark:text-white text-[32px] font-bold leading-tight tracking-tight mb-3">
+                Resultados que falam por si.
+            </h1>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-normal max-w-[320px] mx-auto">
+                Veja por que mais de 10.000 criadores confiam na nossa plataforma para construir seus negócios.
+            </p>
+</div>
+<!-- Stats Section -->
+<div class="p-4">
+<div class="flex flex-wrap gap-3">
+<!-- Stat 1 -->
+<div class="flex flex-1 min-w-[140px] flex-col gap-2 rounded-xl p-5 bg-card-light dark:bg-card-dark shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[24px]">rocket_launch</span>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium">Projetos</p>
+</div>
+<p class="text-gray-900 dark:text-white text-3xl font-bold tracking-tight">1.2k+</p>
+<p class="text-xs text-gray-400 dark:text-gray-500">Entregues este ano</p>
+</div>
+<!-- Stat 2 -->
+<div class="flex flex-1 min-w-[140px] flex-col gap-2 rounded-xl p-5 bg-card-light dark:bg-card-dark shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[24px]">thumb_up</span>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium">Satisfação</p>
+</div>
+<p class="text-gray-900 dark:text-white text-3xl font-bold tracking-tight">4.9/5</p>
+<p class="text-xs text-gray-400 dark:text-gray-500">Avaliação média</p>
+</div>
+<!-- Stat 3 (Full Width) -->
+<div class="flex w-full flex-row items-center justify-between gap-4 rounded-xl p-5 bg-card-light dark:bg-card-dark shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="flex flex-col gap-1">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-medium">Tempo de Resposta</p>
+<p class="text-gray-900 dark:text-white text-2xl font-bold tracking-tight">&lt; 1hr</p>
+</div>
+<div class="size-12 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[28px]">support_agent</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Logos / Trust Strip -->
+<div class="py-6 px-4">
+<p class="text-center text-xs font-semibold uppercase tracking-wider text-gray-400 mb-6">Empresas que crescem conosco</p>
+<div class="flex items-center justify-between opacity-60 dark:opacity-40 grayscale">
+<!-- Logo 1 -->
+<div class="h-8 w-auto flex items-center">
+<span class="text-xl font-bold font-display">ACME</span>
+</div>
+<!-- Logo 2 -->
+<div class="h-8 w-auto flex items-center">
+<span class="text-xl font-bold font-display tracking-tighter italic">Bolt</span>
+</div>
+<!-- Logo 3 -->
+<div class="h-8 w-auto flex items-center">
+<span class="text-xl font-bold font-display border-2 border-current px-1">TV</span>
+</div>
+<!-- Logo 4 -->
+<div class="h-8 w-auto flex items-center">
+<span class="text-xl font-bold font-display">Lumina</span>
+</div>
+</div>
+</div>
+<!-- Testimonials Header -->
+<div class="px-4 pt-4 pb-2">
+<h2 class="text-gray-900 dark:text-white text-[24px] font-bold leading-tight">Depoimentos recentes</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1">O que nossos clientes dizem sobre a experiência.</p>
+</div>
+<!-- Testimonials Carousel -->
+<div class="w-full overflow-x-auto snap-x no-scrollbar pb-6 pl-4 pt-2">
+<div class="flex gap-4 w-max pr-4">
+<!-- Card 1 -->
+<div class="snap-center w-[300px] flex-shrink-0 bg-card-light dark:bg-card-dark rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm flex flex-col justify-between h-[280px]">
+<div>
+<div class="flex gap-1 text-yellow-500 mb-4">
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+</div>
+<p class="text-gray-800 dark:text-gray-200 text-lg leading-relaxed font-medium">
+                            "O melhor construtor de sites que já usei. Simples, poderoso e o suporte é incrível."
+                        </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100 dark:border-gray-800/50 mt-4">
+<div class="relative">
+<img alt="Portrait of Ana Silva smiling in a park" class="size-10 rounded-full object-cover border border-gray-200 dark:border-gray-700" data-alt="Portrait of Ana Silva smiling in a park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcRCaqJMVBuHzV1JKcctaHKUpcUqSjlJC-UsrPOfrW4T5kpzywBKIQyYCyns_MUvb8n9F4HeRmST1UU5Mt9G4RRWiUSppMAPOEjygvQjTHSraOWEr4ZptJRUIFBqgF2qwXpR6UWGxlMw3a4s2VWSvDk_nLgrGSCiTkSPESLByBUZDZc0DiB4rdq4OS78qLJ5ud4eBoVAtpOsy2zsU0NcOfM-DhvEkc5vprzkDPvwPPNhfK3Hvh23c1ZEp_CSsOmHTdzc_KkMD75Aw"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-white rounded-full p-[2px]">
+<span class="material-symbols-outlined text-[10px] block">check</span>
+</div>
+</div>
+<div>
+<p class="text-gray-900 dark:text-white text-sm font-bold">Ana Silva</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs">UX Designer</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="snap-center w-[300px] flex-shrink-0 bg-card-light dark:bg-card-dark rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm flex flex-col justify-between h-[280px]">
+<div>
+<div class="flex gap-1 text-yellow-500 mb-4">
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star_half</span>
+</div>
+<p class="text-gray-800 dark:text-gray-200 text-lg leading-relaxed font-medium">
+                            "Minhas vendas dobraram depois de usar o software deles para refazer minha loja online."
+                        </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100 dark:border-gray-800/50 mt-4">
+<div class="relative">
+<img alt="Portrait of Carlos Mendes in an office setting" class="size-10 rounded-full object-cover border border-gray-200 dark:border-gray-700" data-alt="Portrait of Carlos Mendes in an office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmjfVIL0JPKbZytD8Ec1-rS9fbX0qPIMukV331eh2e1jKSbR8UoBCxl7vbRRLktixYqoWYcET9xBbqqZ9z_E-P_M_aSKKG9etHrj-XR6XT8j07Uig0hrk1c1lRbfObUXsV3ks8aY5NUyhlvq2tMOPelXY53fnlyhnztbaP-rH-EvIGjatpN_Tvs0Xr94VZNLNaAu1Kd-J2O9NzToilVi0yBXOKMI_nNRP8dj6QbRscpQfvOSs32BiXV5Ca_ygmhvOcV5nD84PpWLc"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-white rounded-full p-[2px]">
+<span class="material-symbols-outlined text-[10px] block">check</span>
+</div>
+</div>
+<div>
+<p class="text-gray-900 dark:text-white text-sm font-bold">Carlos Mendes</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs">E-commerce Manager</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="snap-center w-[300px] flex-shrink-0 bg-card-light dark:bg-card-dark rounded-xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm flex flex-col justify-between h-[280px]">
+<div>
+<div class="flex gap-1 text-yellow-500 mb-4">
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current">star</span>
+</div>
+<p class="text-gray-800 dark:text-gray-200 text-lg leading-relaxed font-medium">
+                            "A plataforma é intuitiva e a comunidade é muito ativa. Recomendo para todos."
+                        </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-gray-100 dark:border-gray-800/50 mt-4">
+<div class="relative">
+<img alt="Portrait of Julia Santos smiling against a blue wall" class="size-10 rounded-full object-cover border border-gray-200 dark:border-gray-700" data-alt="Portrait of Julia Santos smiling against a blue wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVIRQ4BeCWoM7sd1LyRUOj-jwjRi2Hj2DSDOrdVU8LmPpISiFbVj2zwofaMAZOuKsgOQ88T7PezythOBYWyavkNhOcw16ihAwVBrJuV5W9lPQTTaUeidpkrGzCzFsOvsOUnwrz5OFOU6a07jX74UdSx6OMzh7cQwt5RC-0DJ4TcjNklrvuq4IffzBPQrYnNQ8_PIzcuuwEi8_81UglojdAKvJX8Jjx3HjHxINqLbffxiS-uvkierC_W2aS1kbrwAvE_AppiaTGkwI"/>
+<div class="absolute -bottom-1 -right-1 bg-primary text-white rounded-full p-[2px]">
+<span class="material-symbols-outlined text-[10px] block">check</span>
+</div>
+</div>
+<div>
+<p class="text-gray-900 dark:text-white text-sm font-bold">Julia Santos</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs">Marketing Digital</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-0 left-0 w-full p-4 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-t border-gray-200 dark:border-gray-800 z-50">
+<div class="max-w-md mx-auto">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold rounded-xl py-4 shadow-lg shadow-primary/25 transition-all transform active:scale-[0.98] flex items-center justify-center gap-2">
+                Comece agora
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Sales Page Hero</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white antialiased overflow-x-hidden">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-hidden">
+<!-- TopAppBar -->
+<!-- Fixed to top for better UX on mobile hero section -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm transition-colors duration-300">
+<div class="flex items-center gap-2">
+<div class="text-primary flex shrink-0 items-center justify-center rounded-lg bg-primary/10 p-2">
+<span class="material-symbols-outlined text-2xl">code</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-gray-900 dark:text-white hidden sm:block">DevStudio</span>
+</div>
+<div class="flex items-center justify-end gap-4">
+<button class="flex items-center justify-center rounded-lg p-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</header>
+<!-- HeroSection -->
+<!-- Using h-screen to make it immersive for the first visual contact -->
+<main class="relative flex flex-grow flex-col justify-center w-full pt-16 pb-8">
+<div class="@container w-full h-full flex flex-col items-center justify-center">
+<div class="w-full h-full flex flex-col items-center justify-center p-4">
+<!-- Hero Content Container -->
+<div class="relative flex min-h-[75vh] w-full flex-col items-center justify-center gap-8 overflow-hidden rounded-2xl bg-cover bg-center bg-no-repeat p-6 text-center shadow-xl ring-1 ring-white/10" data-alt="Abstract digital network connections with blue glowing nodes" style='background-image: linear-gradient(180deg, rgba(16, 22, 34, 0.4) 0%, rgba(16, 22, 34, 0.8) 50%, rgba(16, 22, 34, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsxm83X5w84QB8D0nKTLQjEh5Vix7s2udNoRstG3S_XpU53XfekvyVxWhbl-9_7mvdQly36zcQBBReD7en7NTHOCeEyzLsdV1mU1ovlS8-vl9bm8QEOcE9GgrMyFIO3XtDVHBPBdU2VDx0EjQ72H6K2W_chEsmizVI540Nb0gP3aVKvjymgdtzOojc1SAAWVw4sBut1Zey3Ii0GUi9ioZGxPu-E6wQc4Y7mIwVs1PldIaRQUUKFwbVRb5veRSP7U1NubHRNKP-Ac0");'>
+<!-- Content Wrapper -->
+<div class="flex max-w-lg flex-col gap-6 z-10 mt-auto mb-auto">
+<!-- Headlines -->
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl font-black leading-[1.1] tracking-tight drop-shadow-sm @[480px]:text-6xl">
+                                    Transform Your Ideas into <span class="text-primary">Powerful Software</span>
+</h1>
+<h2 class="text-gray-200 text-base font-medium leading-relaxed drop-shadow-sm @[480px]:text-lg">
+                                    Expert website creation and custom software solutions designed to scale your revenue. Fast, reliable, and stunning.
+                                </h2>
+</div>
+<!-- CTA Section -->
+<div class="flex w-full flex-col items-center gap-4 pt-2">
+<button class="group relative flex w-full max-w-[320px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 py-4 text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-primary/40 hover:-translate-y-0.5 active:translate-y-0">
+<span class="text-base font-bold leading-none tracking-wide">Get Your Free Proposal</span>
+<span class="material-symbols-outlined ml-2 text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+<!-- MetaText / Social Proof -->
+<div class="flex items-center justify-center gap-2 rounded-full bg-white/5 px-4 py-1.5 backdrop-blur-sm">
+<div class="flex items-center gap-0.5 text-yellow-400">
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current">star</span>
+</div>
+<p class="text-gray-300 text-xs font-medium leading-normal">Rated 5.0/5 by innovative startups</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

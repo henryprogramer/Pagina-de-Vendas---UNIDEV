@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Formulário de Captura de Leads</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark min-h-screen flex flex-col text-slate-900 dark:text-white antialiased selection:bg-primary/30 selection:text-primary">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-20 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-b border-gray-200/50 dark:border-gray-800/50">
+<div class="flex items-center p-4 justify-between max-w-lg mx-auto w-full">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200/50 dark:hover:bg-gray-800/50 transition-colors text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight flex-1 text-center pr-10">Consultoria Gratuita</h2>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="flex-1 flex flex-col px-5 pt-6 pb-12 max-w-lg mx-auto w-full">
+<!-- Social Proof (Incentive) -->
+<div class="flex items-center gap-3 mb-5 animate-fade-in-up">
+<div class="flex -space-x-3 overflow-hidden">
+<img alt="Avatar of a satisfied client" class="inline-block h-8 w-8 rounded-full ring-2 ring-background-light dark:ring-background-dark object-cover" data-alt="Small portrait of a smiling woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeDwQ6UL1nQ29OjImYO8yNI7bURmCvgtBqQpoS9wxWXXgZu6DCn7blrfxP8_hpiM8BLDKprNMCNAebJDzZAshZJNFem020QxrY_DLsC5XdqOfVrIg0jJwakvIjgglQZjHIeQSYpI3hIlWW89Yw_7m7aPhgLue6nyq6zXYpBpE37Sb8EtdBEkUo2pDGVCWVAXNPrmxnaGuTO7qYhANBukgZEPYl3A5BNTZHDkH0WaphOctvu5GPqIro_QBZP-1Q2H02e1c7f87bhjM"/>
+<img alt="Avatar of a satisfied client" class="inline-block h-8 w-8 rounded-full ring-2 ring-background-light dark:ring-background-dark object-cover" data-alt="Small portrait of a man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMR6-zBX9B9eW-UzhJsnHFHxdWgXfpFRxATeoGy159WXOMrZBtfJQEL-zZv1VzzMmt3Wa5OEQjWkEi7oyXmdVoXOTyqmRXqreuWgXHNzNl6ffsPSpkPoHlHPQ7vTwA6nE-CGt4_ElxhFxq1wV06q41NQdvcTAi1UmhWdHUi5rcR53AlZ8duZJe4VDkbZHJSK7VmHywrZI17yEgi-nUie-38-ZAQabaOZPGhcVujC5SKfP1kklDDh566CgMuyRH6fJrfSDZGH6dxwo"/>
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 ring-2 ring-background-light dark:ring-background-dark text-[10px] font-bold text-primary">
+                    +500
+                </div>
+</div>
+<p class="text-xs font-medium text-slate-500 dark:text-slate-400">Junte-se a empresas de sucesso</p>
+</div>
+<!-- Headline Text -->
+<h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-extrabold leading-[1.15] text-left mb-3">
+            Quer um <span class="text-primary relative inline-block">
+                site incrível?
+                <svg class="absolute -bottom-1 left-0 w-full h-2 text-primary/20" preserveaspectratio="none" viewbox="0 0 100 10">
+<path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="4"></path>
+</svg>
+</span>
+</h1>
+<!-- Body Text -->
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed mb-8">
+            Preencha seus dados abaixo para uma consultoria gratuita. Vamos entender sua ideia antes de fechar negócio.
+        </p>
+<!-- Form Area -->
+<form class="flex flex-col gap-5 bg-white dark:bg-gray-800/50 p-1 rounded-2xl">
+<!-- TextField: Name -->
+<div class="flex flex-col w-full">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold leading-normal pb-2 ml-1" for="name">Nome Completo</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 group-focus-within:text-primary transition-colors">person</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-slate-900 dark:text-white border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 focus:bg-white dark:focus:bg-gray-800 focus:border-primary focus:ring-1 focus:ring-primary h-14 placeholder:text-slate-400 dark:placeholder:text-slate-600 pl-[48px] pr-4 text-base font-medium leading-normal transition-all" id="name" placeholder="Digite seu nome" type="text" value=""/>
+</div>
+</div>
+<!-- TextField: Email -->
+<div class="flex flex-col w-full">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold leading-normal pb-2 ml-1" for="email">Seu melhor e-mail</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 group-focus-within:text-primary transition-colors">mail</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-slate-900 dark:text-white border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 focus:bg-white dark:focus:bg-gray-800 focus:border-primary focus:ring-1 focus:ring-primary h-14 placeholder:text-slate-400 dark:placeholder:text-slate-600 pl-[48px] pr-4 text-base font-medium leading-normal transition-all" id="email" placeholder="nome@exemplo.com" type="email" value=""/>
+</div>
+</div>
+<div class="h-2"></div>
+<!-- CTA Button -->
+<button class="w-full relative overflow-hidden rounded-xl bg-primary p-4 text-center transition-all hover:bg-blue-600 active:scale-[0.99] shadow-lg shadow-blue-500/25 group" type="button">
+<div class="relative z-10 flex items-center justify-center gap-2">
+<span class="text-lg font-bold text-white">Falar com Especialista</span>
+<span class="material-symbols-outlined text-white transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+<!-- Subtle Shine Effect -->
+<div class="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0"></div>
+</button>
+<!-- Privacy Microcopy -->
+<div class="flex items-center justify-center gap-1.5 mt-2">
+<span class="material-symbols-outlined text-[14px] text-green-500">lock</span>
+<p class="text-xs text-slate-400 dark:text-slate-500 text-center font-medium">
+                    Seus dados estão 100% seguros.
+                </p>
+</div>
+</form>
+</main>
+<!-- Decorative bottom gradient line -->
+<div class="h-1.5 w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent fixed bottom-0 left-0"></div>
+</body></html>

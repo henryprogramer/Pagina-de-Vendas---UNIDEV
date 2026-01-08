@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQs - Perguntas Frequentes</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#232f48", // Color taken from provided Accordion example
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hide for cleaner mobile look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-[480px] mx-auto bg-background-light dark:bg-background-dark shadow-xl">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between bg-background-light dark:bg-background-dark p-4 pb-2 border-b border-gray-200 dark:border-gray-800">
+<button class="text-gray-900 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">
+                Central de Ajuda
+            </h2>
+</header>
+<!-- Hero / Intro Section -->
+<div class="flex flex-col px-6 pt-8 pb-4">
+<div class="flex items-center justify-center mb-4">
+<div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-[32px]">live_help</span>
+</div>
+</div>
+<h1 class="text-gray-900 dark:text-white tracking-tight text-[28px] font-black leading-tight text-center mb-3">
+                Perguntas Frequentes
+            </h1>
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-relaxed text-center">
+                Tire suas dúvidas antes de começar a criar seu site profissional. Se não encontrar o que procura, estamos no chat.
+            </p>
+</div>
+<!-- Accordions List -->
+<div class="flex flex-col flex-1 px-4 py-4 gap-3">
+<!-- Item 1 -->
+<details class="group flex flex-col rounded-xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent overflow-hidden shadow-sm transition-all duration-300 open:ring-2 open:ring-primary/20 dark:open:ring-primary/40">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5 list-none select-none">
+<div class="flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</span>
+<p class="text-gray-900 dark:text-white text-[15px] font-semibold leading-tight group-open:text-primary transition-colors">Preciso saber programar?</p>
+</div>
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform duration-300 text-[24px]">expand_more</span>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-relaxed pl-[44px]">
+                        Não! Nossa plataforma foi feita 100% para iniciantes. Com o sistema intuitivo de "arrastar e soltar", você monta sites profissionais visualmente, sem precisar escrever uma única linha de código.
+                    </p>
+</div>
+</details>
+<!-- Item 2 -->
+<details class="group flex flex-col rounded-xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent overflow-hidden shadow-sm transition-all duration-300 open:ring-2 open:ring-primary/20 dark:open:ring-primary/40">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5 list-none select-none">
+<div class="flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+</span>
+<p class="text-gray-900 dark:text-white text-[15px] font-semibold leading-tight group-open:text-primary transition-colors">Existe alguma mensalidade extra?</p>
+</div>
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform duration-300 text-[24px]">expand_more</span>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-relaxed pl-[44px]">
+                        Não há surpresas. O valor apresentado é único e vitalício para a licença do software. Hospedagem e domínio são serviços à parte que você pode contratar onde preferir, mas indicamos parceiros com desconto.
+                    </p>
+</div>
+</details>
+<!-- Item 3 -->
+<details class="group flex flex-col rounded-xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent overflow-hidden shadow-sm transition-all duration-300 open:ring-2 open:ring-primary/20 dark:open:ring-primary/40">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5 list-none select-none">
+<div class="flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</span>
+<p class="text-gray-900 dark:text-white text-[15px] font-semibold leading-tight group-open:text-primary transition-colors">E se eu tiver problemas?</p>
+</div>
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform duration-300 text-[24px]">expand_more</span>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-relaxed pl-[44px]">
+                        Você nunca estará sozinho. Nossa equipe de suporte está disponível via chat e WhatsApp para te ajudar em qualquer etapa da criação do seu site.
+                    </p>
+</div>
+</details>
+<!-- Item 4 -->
+<details class="group flex flex-col rounded-xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent overflow-hidden shadow-sm transition-all duration-300 open:ring-2 open:ring-primary/20 dark:open:ring-primary/40">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5 list-none select-none">
+<div class="flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</span>
+<p class="text-gray-900 dark:text-white text-[15px] font-semibold leading-tight group-open:text-primary transition-colors">Quanto tempo para ficar pronto?</p>
+</div>
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform duration-300 text-[24px]">expand_more</span>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-relaxed pl-[44px]">
+                        Isso depende da complexidade do projeto, mas muitos de nossos alunos colocam sua primeira Landing Page no ar em menos de 2 horas utilizando nossos modelos prontos.
+                    </p>
+</div>
+</details>
+<!-- Item 5 -->
+<details class="group flex flex-col rounded-xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent overflow-hidden shadow-sm transition-all duration-300 open:ring-2 open:ring-primary/20 dark:open:ring-primary/40">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5 list-none select-none">
+<div class="flex items-center gap-3">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary shrink-0 group-open:bg-primary group-open:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<p class="text-gray-900 dark:text-white text-[15px] font-semibold leading-tight group-open:text-primary transition-colors">Tenho garantia de reembolso?</p>
+</div>
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400 group-open:rotate-180 transition-transform duration-300 text-[24px]">expand_more</span>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-relaxed pl-[44px]">
+                        Sim! Oferecemos uma garantia incondicional de 7 dias. Se você não se adaptar à ferramenta por qualquer motivo, devolvemos 100% do seu investimento sem perguntas.
+                    </p>
+</div>
+</details>
+</div>
+<!-- CTA Section -->
+<div class="p-6 pb-12 mt-4 bg-gradient-to-t from-gray-100 to-transparent dark:from-background-dark/80 dark:to-transparent">
+<div class="flex flex-col items-center gap-6">
+<div class="text-center">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold mb-2">Ainda tem dúvidas?</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm">Não deixe suas perguntas te impedirem de começar.</p>
+</div>
+<button class="w-full flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide shadow-lg shadow-primary/30 hover:bg-primary/90 hover:scale-[1.02] transition-all duration-200">
+                    Falar com Suporte no WhatsApp
+                </button>
+<div class="w-full h-px bg-gray-200 dark:bg-gray-800"></div>
+<div class="text-center">
+<p class="text-gray-500 dark:text-gray-500 text-xs mb-3">Pronto para criar seu site?</p>
+<button class="w-full border-2 border-primary/20 dark:border-primary/40 text-primary dark:text-primary-400 hover:bg-primary/5 dark:hover:bg-primary/10 rounded-lg h-12 font-bold text-sm transition-colors">
+                        Começar Agora
+                     </button>
+</div>
+</div>
+</div>
+<div class="h-10 bg-background-light dark:bg-background-dark"></div>
+</div>
+</body></html>
